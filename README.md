@@ -72,5 +72,6 @@ To run the bot in a Docker container, follow these steps:
 ### Notes:
 - Make sure to replace `"token"` in the `.env` file section with your actual Telegram bot token.
 - If you are using Docker, set your API key in the Docker Compose file at line 7.
+- Make sure to change the volume in the docker compose 
 
 If you need any further changes or have more content to include, just let me know!
