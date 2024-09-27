@@ -1,0 +1,12 @@
+services:
+  telegram-bot:
+    build:
+      context: .  # Build context is the current directory
+      dockerfile: Dockerfile  # Ensure this matches your Dockerfile name
+    environment:
+      TELEGRAM_API_KEY: "TELEGRAM_API_KEY" # Replace with your actual Telegram bot token
+      LOGS_DIR: /usr/src/app/logs  # Directory for logs inside the container
+    volumes:
+      - C:\Users\razeev\Developer\bot\logs:/usr/src/app/logs  # Map your local logs directory
+      - C:\Users\razeev\Developer\bot:/usr/src/app  # Map your local bot directory to allow changes to bot.py
+    restart: unless-stopped  # Optional: Automatically restart the container unless it is explicitly stopped
