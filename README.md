@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 4. **Set Up Environment Variables**:
    Create a `.env` file in the root of your project and add your Telegram bot token:
    ```plaintext
-   TELEGRAM_TOKEN="token"
+   TELEGRAM_API_KEY="token"
    ```
 
 5. **Run the Bot**:
